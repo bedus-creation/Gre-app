@@ -31,6 +31,8 @@ public class EllewDatabase extends SQLiteOpenHelper{
         // TODO Auto-generated method stub
         db.execSQL("DROP TABLE IF EXISTS data");
         onCreate(db);
+
+
     }
 
     public boolean insertContact  (String eng, String pronounce, String meaning,
