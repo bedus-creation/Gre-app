@@ -1,31 +1,23 @@
 package com.creation.bedus.mhang;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
-    ImageButton bListenWord,bQuiz,bSetting;
-    Button bJreWord;
-    WebView mView;
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mView = new WebView(this);
-        mView.loadUrl(getString(R.string.asset));
-        setContentView(mView);
+        setContentView(R.layout.activity_main);
         /*
         * checking whether internet is available or not.
         * if available update with database
          */
-
-        setContentView(R.layout.activity_main);
+        /*
         bJreWord = (Button) findViewById(R.id.id_readDictionary);
+
         bListenWord = (ImageButton) findViewById(R.id.id_listenDictionary);
         bQuiz=(ImageButton) findViewById(R.id.id_Quiz);
         bSetting=(ImageButton) findViewById(R.id.id_setting);
@@ -57,6 +49,13 @@ public class MainActivity extends Activity {
                 startActivity(mIntent);
             }
         });
+        */
+    }
 
+    public void startListening(View view) {
+        Toast.makeText(this,"Button Clicked !",Toast.LENGTH_LONG).show();
+        /*Intent mIntent = new Intent(getApplicationContext(), ListenGreWord.class);
+        startActivity(mIntent);
+        */
     }
 }

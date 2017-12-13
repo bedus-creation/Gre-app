@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              style="?attr/actionButtonStyle"
-              android:layout_gravity="fill_horizontal"
-              android:focusable="true"
-    >
+<Relative xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/actionButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+    android:focusable="true">
+
     <TextView
         android:id="@+id/id_label"
         android:layout_width="wrap_content"
         android:layout_height="50sp"
         android:layout_centerHorizontal="true"
         android:text="@string/title_activity_gre_word"
+        android:textColor="#fff"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#fff" />
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/id_searchQuery"
         android:layout_width="200sp"
-        android:layout_centerHorizontal="true"
         android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
         android:background="@android:drawable/edit_text"
-        android:inputType="text"
         android:hint="@string/hint"
-        android:visibility="invisible"
-    />
+        android:inputType="text"
+        android:visibility="invisible" />
+
     <ImageButton
         android:id="@+id/id_searchEnableButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/abc_ic_search_api_mtrl_alpha"
-        android:contentDescription="@string/imagedescription"
-        android:layout_marginLeft="20sp"
-        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20sp"
+        android:contentDescription="@string/imagedescription" />
 
-</RelativeLayout>
+</Relative>

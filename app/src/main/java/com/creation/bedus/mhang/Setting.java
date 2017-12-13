@@ -31,7 +31,6 @@ public class Setting extends ActionBarActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
         actionBar.setDisplayShowHomeEnabled(true);
 
         BUpdate.setOnClickListener(new View.OnClickListener() {
